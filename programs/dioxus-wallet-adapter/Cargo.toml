@@ -1,0 +1,24 @@
+[package]
+name = "dioxus-wallet-adapter"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+homepage = "https://ore.supply"
+documentation = "https://ore.supply"
+repository = "https://github.com/regolith-labs/dioxus-wallet-adapter"
+readme = "./README.md"
+keywords = ["solana"]
+build = "build.rs"
+
+[dependencies]
+async-std = { workspace = true }
+base64 = { workspace = true }
+bincode = { workspace = true }
+dioxus = { workspace = true }
+dioxus-logger = "0.5.1"
+solana-client-wasm = { version = "1.18", path = "../solana-client" }
+solana-extra-wasm = { version = "1.18", path = "../solana-extra" }
+web-time = "1.0.0"
+tracing = { workspace = true }
+serde_json = { workspace = true }
+
